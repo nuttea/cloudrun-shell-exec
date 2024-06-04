@@ -1,6 +1,6 @@
 FROM gcr.io/google.com/cloudsdktool/google-cloud-cli:slim
 
-# Install nodejs LTS
+# Install nodejs LTS 
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get update && apt-get install -y nodejs wget apt-transport-https gnupg lsb-release \
     && rm -rf /var/lib/apt/lists/*
